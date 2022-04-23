@@ -10,6 +10,6 @@ jobs:
         uses: mlilback/build-number@v1
         with:
           base: 100
-          run-id: ${{ GITHUB_RUN_NUMBER }}
+          run-id: ${GITHUB_RUN_NUMBER}
       - name: get the build number
-        run: echo "${{ BUILD_NUMBER }}"
+        run: echo "${BUILD_NUMBER}"

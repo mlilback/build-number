@@ -11,7 +11,7 @@ This action takes two values as input and adds them together.
 ## `run_id`
 
 **Required** The `GITHUB_RUN_NUMBER` which should be provided 
-as `${{ GITHUB_RUN_NUMBER }}`
+as `${GITHUB_RUN_NUMBER}`
 
 ## Outputs
 
@@ -29,5 +29,5 @@ The inputs added together
 uses: mlilback/build-number@v1
 with:
   base: 100
-  run_id: ${{ GITHUB_RUN_NUMBER }}
+  run_id: ${GITHUB_RUN_NUMBER}
 ```
