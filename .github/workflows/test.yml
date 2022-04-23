@@ -12,4 +12,4 @@ jobs:
           base: 100
           run-id: "${{ github.run_number }}"
       - name: get the build number
-        run: echo "${{ steps.get-build.build-number }}"
+        run: echo "${BUILD_NUMBER}"
