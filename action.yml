@@ -5,6 +5,9 @@ inputs:
   base:
     description: 'Base build number'
     required: true
+  run-id:
+    description: 'The GITHUB_RUN_NUMBER environment variable'
+    required: true
 outputs:
   build-number:
     description: 'The derived build number'
