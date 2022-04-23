@@ -1,0 +1,16 @@
+name: 'Build Number (with base)'
+author: 'Mark Lilback'
+description: 'Takes a base number and returns it + GITHUB_RUN_NUMBER'
+inputs:
+  base:
+    description: 'Base build number'
+    required: true
+outputs:
+  build-number:
+    description: 'The derived build number'
+runs:
+  using: 'node16'
+  main: 'main.js'
+branding:
+  color: 'purple'
+  icon: 'plus'
