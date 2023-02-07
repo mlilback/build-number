@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Get build number
         id: get-build
-        uses: mlilback/build-number@v1
+        uses: mlilback/build-number@v1.0.1
         with:
           base: 100
           run-id: "${{ github.run_number }}"
